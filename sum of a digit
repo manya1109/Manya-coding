@@ -10,7 +10,7 @@ void sum()
         sum += n% 10;
         n = n / 10;
     }
-   printf("sum of all elements%d",sum);
+   printf("sum of elements%d",sum);
 }
 void main() 
 {
