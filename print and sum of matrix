@@ -1,0 +1,42 @@
+#include <stdio.h>
+#define n 3
+#define m 3
+void main()
+{
+    int array[n][m];
+	int i,j;
+	int *p=array;
+	int sum=0;
+    printf("enter the elements of matrix:\n");
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=m;j++)
+        {
+            scanf("%d",p);
+            p++;
+        }
+    }
+    p=array;
+    printf("the elements of martix:\n");
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=m;j++)
+        {
+            printf("%d\t",*p);
+            p++;
+		}
+		printf("\n");
+    }
+    
+    for(i=0;i<=n;i++)
+    {
+        for(j=0;j<=m;j++)
+        {
+        	if(i==j)
+        	{
+        	sum=sum +array[i][j];
+            }
+		}
+    }
+ 	printf("The Sum of Diagonal Elements of a Matrix = %d\n", sum );   
+}
