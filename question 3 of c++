@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{ int percentage;
+cout<<"enter your percentage";
+cin>>percentage;
+if(percentage>=33)
+{
+    cout<<"you are pass so just relax\n"<<percentage;
+
+}
+else
+{
+    cout<<"you are fail so just do some hard work\n"<<percentage;
+}
+    return 0; 
+}
